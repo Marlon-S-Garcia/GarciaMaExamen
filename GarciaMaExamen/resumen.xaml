@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GarciaMaExamen.resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Image Source="logo.png"/>
+            </StackLayout>
+            <Frame BackgroundColor="Blue" Padding="18" CornerRadius="0">
+                <Label Text="RESUMEN PAGO ALUMNO" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+
+            </Frame>
+
+            <Label Text=""/>
+            <Label x:Name = "lblUsuario" />
+            <Entry x:Name="txtUsuario" IsReadOnly="False" FontSize="12"/>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Total a pagar: " Grid.Row="0" Grid.Column="0" FontSize="12"/>
+                <Entry x:Name="txtFinal" IsReadOnly="True" Grid.Row="0" Grid.Column="1" FontSize="10"/>
+
+            </Grid>
+            <Button x:Name="btnVer" Text="MOSTRAR CUOTA" Clicked="btnVer_Clicked"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
